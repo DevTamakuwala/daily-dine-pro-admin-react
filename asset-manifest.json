@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/daily-dine-pro-admin-react/static/css/main.87f0759d.css",
-    "main.js": "/daily-dine-pro-admin-react/static/js/main.a7a83c9f.js",
+    "main.js": "/daily-dine-pro-admin-react/static/js/main.48dc80d0.js",
     "index.html": "/daily-dine-pro-admin-react/index.html",
     "main.87f0759d.css.map": "/daily-dine-pro-admin-react/static/css/main.87f0759d.css.map",
-    "main.a7a83c9f.js.map": "/daily-dine-pro-admin-react/static/js/main.a7a83c9f.js.map"
+    "main.48dc80d0.js.map": "/daily-dine-pro-admin-react/static/js/main.48dc80d0.js.map"
   },
   "entrypoints": [
     "static/css/main.87f0759d.css",
-    "static/js/main.a7a83c9f.js"
+    "static/js/main.48dc80d0.js"
   ]
 }
