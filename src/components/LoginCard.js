@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 import { login as apiLogin, saveToken } from '../services/auth';
 import api from '../services/apiClient';
+import { encryptPassword } from '../services/encryptPassword';
+
 
 const EyeIcon = () => (
   <>
@@ -83,11 +85,10 @@ const LoginCard = ({ onShowForgotPassword, onLogin, config }) => {
           console.log('Login request path: /api/auth/login');
         }
 
-        console.log('Login attempt with email:', email);
-        console.log('Login attempt with password:', password);
+        const encrypted = await encryptPassword(password);
 
-        const data = await apiLogin(email, password);
-      
+        const data = await apiLogin(email, encrypted);
+
         console.log('Login response:', data);
 
       // If server returns a token, persist it

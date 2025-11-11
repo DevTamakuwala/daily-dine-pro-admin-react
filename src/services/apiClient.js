@@ -4,7 +4,8 @@ import axios from 'axios';
 const api = axios.create({
   // Make sure baseURL includes protocol so axios doesn't treat it as a relative URL.
   // Prefer an env var (CRA: REACT_APP_API_URL) and fallback to the production host.
-  baseURL: 'https://dailydinepro.azurewebsites.net',
+  // baseURL: 'https://dailydinepro.azurewebsites.net',
+  baseURL: 'http://192.168.1.6:8080',
   headers: {
     'Content-Type': 'application/json',
     'Accept': 'application/json',
